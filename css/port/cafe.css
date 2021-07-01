@@ -309,7 +309,7 @@ a {
 	width: 100%;
 	height: 100%;
 	position: relative;
-	background-image: url(/img/coffee_about.jpg);
+	background-image: url("../../img/coffee_about.jpg");
 	background-size: cover;
 }
 
