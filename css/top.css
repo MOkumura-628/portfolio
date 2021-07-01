@@ -235,3 +235,37 @@ td {
   text-align: center;
   line-height: 2;
 }
+
+@media screen and (max-width: 600px) {
+  .switchBtn {
+    width:40%;
+    border-radius:8px;
+    padding: 10px;
+  }
+
+  .info__basic {
+    width: 95%;
+    padding: 1%;
+  }
+
+  .info__skill {
+    width: 100%;
+  }
+
+  .jobInfo {
+    width: 100%;
+    border:2px dotted navy;
+    margin:24px auto 0;
+  }
+
+  .jobInfo__item {
+    padding:8px;
+    border:none;
+  }
+
+  .productList__item {
+    width: 100%;
+    padding: 24px 12px;
+    border-top:1px solid #aaa;
+  }
+}

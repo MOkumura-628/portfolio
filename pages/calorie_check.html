@@ -19,16 +19,16 @@
   </header>
   <div class="container">
     <div class="listTable">
-      <h2 class="listTable__head">ジャンル一覧</h2>
+      <h2 class="listTable__head">ジャンル選択</h2>
       <ul class="listTable__main">
-        <li class="hm"><a href="#hbger">ハンバーガー</a></li>
-        <li class="gyu"><a href="#gydon">牛丼</a></li>
-        <li class="fmres"><a href="#fmres">ファミレス</a></li>
-        <li class="sushi"><a href="#sushi">回転寿司</a></li>
+        <li class="js-selectBtn js-on"><a href="javascript:void(0)">ハンバーガー</a></li>
+        <li class="js-selectBtn"><a href="javascript:void(0)">牛丼</a></li>
+        <li class="js-selectBtn"><a href="javascript:void(0)">ファミレス</a></li>
+        <li class="js-selectBtn"><a href="javascript:void(0)">回転寿司</a></li>
       </ul>
     </div>
 
-    <div id="hbger" class="mainItem">
+    <div class="mainItem js-show">
       <h3 class="mainItem__head">ハンバーガー</h3>
       <ul class="mainItem__list">
         <li>
@@ -64,7 +64,7 @@
       </ul>
     </div>
 
-    <div id="gydon" class="mainItem">
+    <div class="mainItem">
       <h3 class="mainItem__head">牛丼</h3>
       <ul class="mainItem__list">
         <li><img src="../img/calorie/yoshinoya.png" alt="吉野家"><a href="https://www.yoshinoya.com/pdf/allergy/" target="_blank"><span class="urlBtn">吉野家</span></a></li>
@@ -74,7 +74,7 @@
       </ul>
     </div>
 
-    <div id="fmres" class="mainItem">
+    <div class="mainItem">
       <h3 class="mainItem__head">ファミリーレストラン</h3>
       <ul class="mainItem__list">
         <li><img src="../img/calorie/gasuto.png" alt="ガスト"><a href="https://www.skylark.co.jp/chawan/pk637h00000061wm-att/allergy.pdf" target="_blank"><span class="urlBtn">ガスト</span></a></li>
@@ -86,7 +86,7 @@
       </ul>
     </div>
 
-    <div id="sushi" class="mainItem">
+    <div class="mainItem">
       <h3 class="mainItem__head">回転寿司</h3>
       <ul class="mainItem__list">
         <li><img src="../img/calorie/sushiro.png" alt="スシロー"><a href="https://www.akindo-sushiro.co.jp/menu/" target="_blank"><span class="urlBtn">スシロー</span></a></li>
