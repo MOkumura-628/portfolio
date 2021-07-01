@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="robots" content="noindex">
+	<title>初学者向けフロントエンド解説</title>
+	<!--css-->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/port/beginner.css">
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Oleo+Script|Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4bf309b3a3.js"></script>
+	<!--js-lib-->
+	<script src="../js/lib/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="header__logo">
+				<h1 class="header__head">初学者向けフロントエンド解説サイト</h1>
+				<img src="/img/pro_lang.png" alt="プログラミング言語">
+			</div>
+			<div class="header__backTop">
+				<a href="/">Back to <br>PORTFOLIO</a>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<main class="main">
+			<div class="mainTop">
+				<h2 class="mainTop__head"><i class="fas fa-clipboard"></i>目次</h2>
+				<div class="mainTop__textWrap">
+					<p class="mainTop__text mt-10">① <a href="#frontAndBack">フロントエンドとバックエンド</a></p>
+					<p class="mainTop__text">② <a href="#devLanguage">フロントエンド開発で使う言語</a></p>
+					<p class="mainTop__text">③ <a href="#modernAndLegacy">モダンな環境とレガシーな環境</a></p>
+				</div>
+			</div>
+			<div class="mainMiddle">
+				<div class="textWrap" id="frontAndBack">
+					<h2 class="textWrap__head"><span>フロントエンドとバックエンド</span></h2>
+					<div class="topImg">
+						<img src="/img/programmer_m.png" alt="プログラマー">
+					</div>
+					<div class="detail">
+						<p>まず<mark>フロントエンド</mark>（front end）とはWebサービスやWebアプリケーションなどでユーザーがボタンを押したり入力をしたりする部分、またソフトウェアなどと直接やり取りをする部分のことを指します。<br>ユーザーがWebサービスなどを利用する時に目に見える表の部分はフロントエンドの部分です。<br>※必要スキルや使用言語については後述します。</p>
+						<p>そして<mark>バックエンド</mark>（back end）とはユーザーが入力した内容などのデータ処理、また保存、データ処理の結果の出力などを行う要素のことを指します。Webサイトのデータベース管理システムなどです。<br>フロントエンドとは違いバックエンドはWebサービスを使用するユーザーには見えない部分です。</p>
+						<p>バックエンドで使用されている言語ですが、<br>JavaやPHP、Ruby、Python、Scala、Node.jsなどがこれにあたります。<br>またデータベースではMySQL、NoSQLなどが使用されています。サーバに対する知識やセキュリティ面の知識・対策が求められます。<br>CMS(コンテンツマネジメントシステム)で有名なWordPressはPHPにより作成されています。<br>言語の種類としては「動的型付けや静的型付け」「スクリプト言語とコンパイラ言語」などの分類がございますがここでは割愛させていただきます。</p>
+						<p class="detail__bottom">このサイトでは主に<span>フロントエンド</span>に関する基礎知識を紹介・解説します。</p>
+					</div>
+				</div>
+				<div class="textWrap" id="devLanguage">
+					<h2 class="textWrap__head"><span>フロントエンド開発で使う言語</span></h2>
+					<div class="detail">
+						<div class="detail__front">
+							<p>フロントエンドの領域では主に</p>
+							<ul class="frontList">
+								<li>① デザイン作成</li>
+								<li>② マークアップ</li>
+								<li>③ JavaScriptプログラミング</li>
+							</ul>
+							<p class="mt-10">の3つに分解して考えることができます</p>
+						</div>
+						<p>
+							①第一にデザイン作成です。Web制作会社であれば、クライアント先の<mark>イメージや目的</mark>などを明確にし、「ブランドイメージに合う色や配列などは何か？」などのイメージをすり合わせていく段階からスタートします。また自社でWebサービスを持つ企業であれば、「新しく創り上げるページはサービス全体とイメージが合うか？」「ここの動作がわかりにくいので、表現として新しいアイコンを用いて伝わりやすくするべきなのでは？」といった打ち合わせも必要です。
+						</p>
+						<p>デザイン制作に必要となってくるソフトウェアといえば、Adobe社が提供しているPhotoshop,Illustratorです。<br>最近ではFigma,Adobe XDなども人気が上がってきております。<br>Photoshopは主に画像の修正やバナーの制作・デザインカンプの制作などに使用され、Illustratorではアイコンなどをベクター形式でつくる際に使用されます。「Adobe Creative Cloud」というサービスに入ればこれらがサブスクリプションで利用ができます。<br><img src="/img/photo_illu.jpeg" alt="photoshop" class="photoAndIllu"><br><a href="https://www.adobe.com/jp/creativecloud.html" class="adobeLink" target="_blank">Adobe Creative Cloudについてはこちら(公式ページ)</a></p>
+						<p>②マークアップではHTML CSS を使用します。<br>HTMLはHyper Text Markup Languageの頭文字をとった略称でありブラウザ上で表示する文書<mark>構造</mark>を示します。CSS(Cascading Style Sheets)ではそれらを<mark>装飾</mark>しデザインするために使用します。<br>HTMLで枠組みを作り、それを見やすいようにCSSで装飾するとといったイメージです。<br>HTMLとCSSにはバージョンがあり、最新版がHTMLではHTML5、CSSではCSS3となっております。</p>
+						<p>開発現場では先程①で作られた完成されたデザインを元にコードに落とし込んでいく必要があります。<br>細かな表示崩れや、配色の間違いがないように注意深くしていかなければなりません。<br>最近ではメンテナンス性を意識したCSS設計にも注意を払う必要があります。(詳しくは後述、モダンな環境とレガシーな環境)</p>
+						<div class="frontLangImg">
+							<img src="/img/htmlcss.jpeg" alt="htmlcss">
+						</div>
+						<p class="mt-20">③最後にJavaScriptです。<br> HTMLとCSSはマークアップ言語と言われているのに対し、JavaScriptはプログラミング言語となっております。
+							<br>マークアップはパズルを組み立てるようなイメージでコードを書いていきますが、プログラミングは条件によって数値を変えたり、指定した数だけ繰り返し処理をしたりとパターンによって<mark>動的</mark>に表示を変えることができます。<br>JavaScriptでできることは多岐に渡り、Webサイトにアニメーションを入れたり、クリックやスクロールなどのユーザー側の操作によって機能を拡張することもできます。フロント側(ブラウザ側)で動く唯一のプログラミング言語です。<br><mark>近年最も注目されている言語の一つ</mark>としても挙げられます。</p>
+						<p>JavaScriptは開発現場によって担当する人が違います。フロントエンドエンジニアがするケース、HTMLコーダーが簡易機能を実装する際にライブラリを用いながらするケース、Webデザイナーがコードまでも担当するケースなどがあります。</p>
+						<div class="frontLangImg">
+							<img src="/img/js.png" alt="JavaScript">
+						</div>
+					</div>
+				</div>
+				<div class="textWrap" id="modernAndLegacy">
+					<h2 class="textWrap__head"><span>モダンな環境とレガシーな環境</span></h2>
+					<div class="detail">
+						<p class="mt-20">フロントエンドは技術の変化が激しい世界です。インターネット黎明期ではテーブルレイアウトと言われるものが頻繁に使われておりましたが現在は古い技術として取り上げられています。<br>必ずしも「古い = 悪い」というわけではございませんが、Googleなどの検索エンジンに表示されにくいものが古い技術には多くなっております。</p>
+						<p>このように古い技術のままアップグレードされずにいる開発環境を<mark>レガシー</mark>、最新の技術に寄り添った開発環境を<mark>モダン</mark>と言います。</p>
+						<p>レガシーな環境のままHTMLやCSSを更新していないと、長期に渡ってサービスを運営していく場合に大きな難点にぶつかります。<br>それは「メンテナンス性が著しく低い」開発体制になってしまっているというものです。<br>本来であれば少しCSSのスタイルを編集する程度のものであったのが、いくつものファイルで強引に上書きされているがゆえに「どのファイルを修正すれば良いか」というものに無駄な時間がかかってしまうということがあります。</p>
+						<p>ここで現在モダンな開発環境におけるメンテナンス性を上げる対策をいくつかご紹介します。</p>
+						<div class="goodCodeInfo">
+							<ul class="goodCodeInfo__list">
+								<li>①CSSメタ言語を使う</li>
+								<li>②タスクランナーを利用する</li>
+								<li>③JavaScriptフレームワークを導入する</li>
+								<li>④コード規則を作る</li>
+							</ul>
+						</div>
+						<p class="mt-20">①CSSメタ言語を使う<br>CSSメタ言語とはCSSに変数や条件分岐などのプログラミング要素を加えて書くことができるものです。<br>代表的なもので「Sass,Stylus,Less」などが挙げられます。<br>これらを使うメリットは、同じようなデザインを持ったパーツを使い回せたり、一部を編集するだけでいくつかのスタイルを編集できることにあります。運用する面でこスピードが上がり、効率が良くなります。</p>
+						<div class="frontLangImg">
+							<img src="/img/sass_stylus_less.png" alt="sassstylusless">
+						</div>
+						<p class="mt-10">②タスクランナーを利用する<br>タスクランナーとは従来手動でやっていたWeb構築に必要な処理を自動で行ってくれるプログラムのことです。<br>代表的なものに「Gulp,Grant」というものがあります。<br>具体的には、画像の圧縮処理やSassなどのメタ言語のコンパイル(利用できるように自動変換)、サイトへのアップロードなどもできるものさえあります。<br>そうすることでチームコーディングをする際に全体として圧倒的に開発速度をあげることができます。</p>
+						<div class="frontLangImg">
+							<img src="/img/gulp_webpack_grant.jpeg" alt="gulpwebpackgrant">
+						</div>
+						<p class="mt-10">③JavaScriptフレームワークを導入する<br>フレームワークを一般的な用語で置き換えると、「枠組み」「骨組み」となります。<br>あらかじめ備わっているパーツなどを組み合わせて、必要に応じて機能を追加していくことでページを効率よく量産できるというメリットがあります。有名なものとしては世界最大のSNSサービスを開発しているFacebook社が公開しているReact.jsや世界最大の検索エンジンGoogleが手がけるAngular.jsやVue.jsなどがあります。<br>学習コストが高いという難点がございますが、これらを習得することでチーム開発におけるコンポーネント(部品)制作において非常に強力な力を発揮します。</p>
+						<div class="frontLangImg">
+							<img src="/img/react_angular_vue.jpg" alt="reactangularvue">
+						</div>
+						<p>④コード規則を作る<br>基本的にWebサービスを自社で行う企業、受託で複数の案件を抱えている制作会社においてはチームで開発するのが原則です。<br>そうなった時に意識しないといけないことは、チーム全体の開発速度です。<br>自分1人ではわかっているつもりでもCSSのクラスの付け方や、ファイルの管理方法などはある程度チームで共有していく必要があります。<br><span class="mt-20">基本的に良いコードとは</span></p>
+						<div class="goodCodeInfo">
+							<ul class="goodCodeInfo__list">
+								<li><span>・</span>予測しやすい</li>
+								<li><span>・</span>保守・運営しやすい</li>
+								<li><span>・</span>再利用しやすい</li>
+								<li><span>・</span>拡張しやすい</li>
+							</ul>
+						</div>
+						<p>という点が挙げられます。</p>
+						<p>いかにチーム内で命名規則を統一させるか？などといった対策が必要です。</p>
+					</div>
+				</div>
+			</div>
+			<div class="mainBottom">
+				<h3 class="mainBottom__head"><span>最後に</span></h3>
+				<p class="mainBottom__text">フロントエンドの世界は幅広く、常に変化しております。<br>2、3年ほど前に主流として使われているものが今ではほとんど使われていなくなってしまったりと常に技術取得にはアンテナを張っていなければいけません。</p>
+				<p class="mainBottom__text">
+					技術情報共有サイトである
+					<a href="https://qiita.com/" target="_blank">Qita</a>や技術質問サイトである<a href="https://teratail.com/" target="_blank">TeraTail</a>などをうまく利用して新しい情報に敏感に飛びつきましょう！
+				</p>
+			</div>
+		</main>
+		<div class="scrollTopBtn" id="js-show-scroll">
+			<a href="#">
+				<img src="/img/arrow_top.png" alt="">
+			</a>
+		</div>
+	</div>
+	<script src="/js/beginner_pro.js"></script>
+</body>
+
+</html>

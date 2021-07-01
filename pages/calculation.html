@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="robots" content="noindex">
+	<title>簡易計算キュレーション</title>
+	<!--css-->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/port/calculation.css">
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Oleo+Script|Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4bf309b3a3.js"></script>
+	<!--js-lib-->
+	<script src="/js/lib/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="header__left">
+				<h1 class="topHeading"><img src="/img/cal_toplogo.png" alt="calculation">計算キュレーション</h1>
+				<p class="topText">※簡単な計算を集めたシンプルサイト</p>
+			</div>
+			<div class="header__right">
+				<a href="/">PORTFOLIO トップへ戻る</a>
+			</div>
+			<div class="clear"></div>
+		</header>
+		<main class="main">
+			<div class="item">
+				<h2 class="item__head">BMIから肥満度を</h2>
+				<p class="item__text">※身長と体重を半角数字でご記入ください</p>
+				<div class="bmiBox">
+					<div class="heightBox">
+						<input type="text" id="js-height" value=""><span class="ml-4">cm</span>
+						<p>入力はcmでお願いします</p>
+					</div>
+					<div class="weightBox">
+						<input type="text" id="js-weight" value=""><span class="ml-4">Kg</span>
+					</div>
+					<button id="js-bmiButton" class="button">結果</button>
+					<p class="bmiNumView" id="js-bmiNumView">BMIは<span id="js-bmiNum" class="bmiNum"></span>です</p>
+					<p class="bmiResultText" id="js-resultText"></p>
+				</div>
+			</div>
+			<div class="item">
+				<h2 class="item__head">あなたの身長はどこの国の平均？</h2>
+				<p class="item__text">国によって違う平均身長、<br>日本では男性の平均が170cm、女性が158cmと言われています。</p>
+				<p class="item__text">※身長を半角数字でご記入ください<br>※対象身長は<mark>147cm ~ 183cm</mark>です</p>
+				<div class="heightBox">
+					<input type="text" id="js-height-avg" value=""><span class="ml-4">cm</span>
+					<p>入力はcmでお願いします</p>
+				</div>
+				<button id="js-heightAvgButton" class="button">結果</button>
+				<div class="avgResult" id="js-avgResult">
+					<p>あなたの身長は</p>
+					<p>男性ならば<span style="color:blue;" id="js-country-a"></span></p>
+					<p>女性ならば<span style="color:lightcoral;" id="js-country-b"></span></p>
+				</div>
+			</div>
+			<div class="item">
+				<h2 class="item__head">あの日まであと何日？</h2>
+				<p class="item__text"><span style="color:red;">現在</span>から指定した日時まで<br>あと何日かを計算します</p>
+				<p>※半角数字で日時を指定してください</p>
+				<div class="setDateBox">
+					<div class="setDateBox__inputWrap">
+						<input type="text" id="js-date-y">年
+					</div>
+					<div class="setDateBox__inputWrap">
+						<input type="text" id="js-date-m">月
+					</div>
+					<div class="setDateBox__inputWrap">
+						<input type="text" id="js-date-d">日
+					</div>
+				</div>
+				<button id="js-dayCal" class="button mt-20">結果</button>
+				<div class="dateResultText" id="js-dateResultText">
+					<p><span id="js-appYear"></span>年<span id="js-appMonth"></span>月<span id="js-appDay"></span>日まで</p>
+					<p>あと<span id="js-resultDiff"></span>日です</p>
+				</div>
+				<div class="dateResultText" id="js-dateResult-error"><span id="js-error-text"></span></div>
+			</div>
+			<div class="item">
+				<h2 class="item__head">あなたの人生はあと何日？</h2>
+				<p class="item__text">人生100年時代と言われて久しいですが、<br>現在の日本の平均寿命は84歳と言われています。</p>
+				<p>※半角数字で生年月日を指定してください</p>
+				<div class="setDateBox">
+					<div class="setDateBox__inputWrap">
+						<input type="text" id="js-life-y">年
+					</div>
+					<div class="setDateBox__inputWrap">
+						<input type="text" id="js-life-m">月
+					</div>
+					<div class="setDateBox__inputWrap">
+						<input type="text" id="js-life-d">日
+					</div>
+				</div>
+				<button id="js-lifeCal" class="button mt-20">結果</button>
+				<div class="dateResultText" id="js-lifeLimitText">
+					<p>あなたの人生は残り、、、</p>
+					<p>約「<span id="js-limit-days"></span>」日です</p>
+					<p class="limitBox__cap">※寿命を84歳として計算しています</p>
+					<p class="mt-20">以外と短かったでしょうか？</p>
+					<p class="limitBox__poe">Life is time...</p>
+				</div>
+				<div class="dateResultText" id="js-lifeLimitText-error"><span id="js-limit-error"></span></div>
+			</div>
+			<div class="item">
+				<h2 class="item__head">あなたの時給</h2>
+				<p class="item__text">年収から時間あたりの収入を計算します。</p>
+				<div class="salaryBox">
+					<input type="text" id="js-salary"><span class="ml-4">万円</span>
+				</div>
+				<button id="js-salaryButton" class="button mt-20">結果</button>
+				<div class="salaryResult" id="js-salaryResult">
+					<p>あなたの時給は</p>
+					<p>
+						<span class="salaryResult__num" id="js-salary-num"></span>円/時間です
+					</p>
+					<p class="salaryResult__detail">※年間の労働時間を8時間/日 × 250日として計算しています。</p>
+				</div>
+			</div>
+			<div class="item">
+				<h2 class="item__head">ビルゲイツとあなたの年収</h2>
+				<p class="item__text">あなたの年収はビルゲイツの何分？</p>
+				<div class="salaryBox">
+					<input type="text" id="js-gates-salary"><span class="ml-4">万円</span>
+				</div>
+				<button id="js-gates" class="button mt-20">結果</button>
+				<div class="resultGatesBox" id="js-resultGates-box">
+					<p>あなたの年収はビルゲイツの・・・</p>
+					<p>
+						<span id="js-resultGates"></span>秒です
+					</p>
+					<p>分ではなく、秒です。実は。</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</main>
+	</div>
+	<script src="/js/calculation.js"></script>
+</body>
+</html>

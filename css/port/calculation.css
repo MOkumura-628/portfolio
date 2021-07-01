@@ -1,0 +1,242 @@
+body {
+	font-family: 'Noto Serif JP', serif;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.ml-4 {
+	margin-left: 4px;
+}
+
+.container {
+	padding: 40px 100px;
+}
+
+.topHeading {
+	font-size: 28px;
+	color: navy;
+}
+
+.topHeading img {
+	width:25px;
+	margin-left:4px;
+}
+
+.topText {
+	text-indent: 2em;
+	font-size: 14px;
+	margin-top: 8px;
+	color:#333;
+}
+
+.header__left {
+	float: left;
+}
+
+.header__right {
+	float: right;
+	padding-top: 24px;
+}
+
+.header__right > a {
+	font-size: 14px;
+	text-decoration: underline;
+	color: lightcoral;
+}
+
+.main {
+	margin-top:40px;
+}
+
+.item {
+	box-sizing: border-box;
+	width:45%;
+	float: left;
+	margin-left:2.5%;
+	margin-top:40px;
+	border:1px solid navy;
+	border-radius:10px;
+	padding:40px;
+	min-height:500px;
+}
+
+.item__head {
+	text-align: center;
+	font-size:20px;
+	color:lightcoral;
+}
+
+.item__text {
+	margin:16px 0;
+	padding:4px;
+	line-height: 1.5;
+}
+
+.button {
+	width:80px;
+	padding:4px;
+	border-radius:4px;
+	font-size:14px;
+	background-color: lightblue;
+	color:#333;
+	border:1px solid #eee;
+	cursor: pointer;
+}
+
+.button:hover {
+	color:#000;
+	transition: 0.5s all;
+	background-color: lightcyan;
+}
+
+.bmiBox {
+	padding:4px;
+}
+
+.bmiResultText {
+	font-size:14px;
+	margin-top:8px;
+	color:lightcoral;
+}
+
+.heightBox input {
+	padding:4px;
+}
+
+.weightBox input {
+	padding:4px;
+}
+
+.salaryBox input {
+	padding:4px;
+}
+
+.bmiNum {
+	color:blue;
+}
+
+.bmiNumView {
+	margin-top:10px;
+	display: none;
+}
+
+.weightBox {
+	margin-top:10px;
+	padding-bottom:16px;
+}
+
+.heightBox {
+	margin-top:10px;
+	padding-bottom:10px;
+}
+
+.heightBox p {
+	font-size:14px;
+	margin-top:8px;
+	text-indent: 1em;
+}
+
+.avgResult {
+	margin-top:20px;
+	line-height: 1.5;
+}
+
+.salaryResult {
+	margin-top:10px;
+	display: none;
+	line-height:1.5;
+	border-top:2px solid #eee;
+	padding:8px;
+}
+
+.salaryResult__num {
+	color:blue;
+	font-weight:bold;
+	font-size:16px;
+}
+
+.salaryResult__detail {
+	margin-top:8px;
+	font-size:12px;
+	border-top:2px solid #eee;
+}
+
+.resultGatesBox {
+	margin-top: 20px;
+	display: none;
+	line-height: 1.5;
+}
+
+.resultGatesBox span {
+	color:red;
+	font-weight:bold;
+}
+
+.setDateBox__inputWrap {
+	margin-top:4px;
+}
+
+.setDateBox {
+	margin-top:8px;
+	padding:4px;
+}
+
+.setDateBox input {
+	padding:2px;
+	font-size:16px;
+	letter-spacing: 1.2px;
+	margin-right:4px;
+	color:#333;
+}
+
+.dateResultText {
+	margin-top:10px;
+	display: none;
+}
+
+.dateResultText p {
+	line-height: 1.5;
+}
+
+.dateResultText span {
+	color:red;
+}
+
+.limitBox__cap {
+	font-size:14px;
+	text-indent: 1em;
+}
+
+.limitBox__poe {
+	font-family: 'Teko', sans-serif;
+	color:navy;
+	font-weight: bold;
+	font-size:20px;
+	letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 896px) {
+	.item {
+		width:90%;
+		margin:40px auto 0;
+		min-height:none;
+	}
+}

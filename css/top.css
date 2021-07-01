@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #ffffe6;
+}
+
+img {
+  max-width:100%;
+}
+
+.container {
+  padding: 2.5%;
+}
+
+.header {
+  text-align: center;
+}
+
+.header__heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__heading>span {
+  color: orange;
+}
+
+.header__text {
+  margin-top: 12px;
+}
+
+.footer {
+  width: 96%;
+  margin: 10px auto 0;
+  padding-top: 10px;
+  border-top: 1px solid #aaa;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
+
+
+
+.main {
+  width: 96%;
+  margin: 2.5% auto 0;
+  background-color: #fff;
+  border: 1px solid #aaa;
+}
+
+.main__btnWrap {
+  border-bottom: 1px solid #aaa;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.switchBtn {
+  width:240px;
+  border-radius: 8px;
+  padding:12px;
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+.switchBtn.ft {
+  margin-right:10px;
+}
+
+.switchBtn.js-on {
+  background: orange;
+  font-weight: bold;
+}
+
+.main__content {
+  margin-top: 20px;
+}
+
+.profile {
+  display: none;
+}
+
+.profile.js-on {
+  display: block;
+}
+
+.product {
+  display: none;
+}
+
+.product.js-on {
+  display: block;
+}
+
+.info {
+  margin: 24px auto 0;
+  padding: 8px;
+}
+
+.info__heading {
+  font-size:20px;
+  font-weight: bold;
+  text-align: center;
+  color: orange;
+}
+
+.info__basic {
+  width: 90%;
+  margin: auto;
+  line-height: 2;
+  padding: 2%;
+
+}
+
+.info__skill {
+  line-height: 2;
+  padding:0 2%;
+  font-size: 16px;
+  margin:auto;
+  width:90%;
+}
+
+.info__skillHeading {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.info__skillText {
+  padding-top:12px;
+}
+
+.skillTable {
+  width: 100%;
+  margin: 20px auto 0;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+.skillTable th {
+  background: #333;
+  color: #fff;
+}
+
+.skillTable th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info__cap {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 2;
+}
+
+.jobInfo {
+  width: 90%;
+  padding: 2.5%;
+  font-size: 16px;
+  border: 4px dotted navy;
+  margin: 10px auto;
+  line-height: 2;
+}
+
+.jobInfo__item {
+  border:1px solid #aaa;
+  border-radius: 8px;
+  padding:12px;
+  margin-top:40px;
+}
+
+.jobInfo__detail {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size:18px;
+  margin-top: 12px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.productList {
+  width:95%;
+  margin:10px auto 0;
+}
+
+.productList__item {
+  width:48.5%;
+  display: inline-block;
+  vertical-align: top;
+  padding:2.5%;
+}
+
+.productList__item > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  font-size: 18px;
+  background-color: orange;
+  color:#fff;
+  font-weight: bold;
+  margin: 12px auto;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.productList__item > a:hover {
+  background-color:navy;
+}
+
+.productList__item >  img{
+  width: 300px;
+  height: 240px;
+  display: block;
+  margin: auto;
+  border: 4px solid #aaa;
+  padding: 10px;
+}
+
+.productList__item > p {
+  text-align: center;
+  line-height: 2;
+}

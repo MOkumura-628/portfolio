@@ -1,0 +1,473 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Serif JP', serif;
+	background-color: #cec7c2;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.splitBox {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+.leftBox {
+	padding: 1% 0.25% 1% 1%;
+	left: 0;
+}
+
+.leftBox__inner {
+	width: 100%;
+	height: 100%;
+	background-image: url("/img/cafe_ace.jpeg");
+	background-size: cover;
+}
+
+.rightBox {
+	padding: 1% 1% 1% 0.25%;
+	right: 0;
+}
+
+.rightBox__inner {
+	width: 100%;
+	height: 100%;
+	background-image: url("/img/cafe_ace_left.jpeg");
+	background-size: cover;
+}
+
+.siteMain {
+	position: absolute;
+	top: 20%;
+	left: 31.5%;
+	width: 36%;
+	height: 50%;
+	border-radius: 2px;
+}
+
+.siteMain__inner {
+	width: 100%;
+	height: 100%;
+	background-image: url("/img/main_center.jpeg");
+	background-size: cover;
+	box-shadow: 0 0 128px 16px #aaa;
+	border-radius: 8px;
+}
+
+.siteMain__head {
+	font-family: 'Oleo Script', cursive;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 40px;
+	letter-spacing: 4px;
+	color: #f7f1d8;
+}
+
+.siteMain__head > img {
+	vertical-align: top;
+	margin-right: 2px;
+}
+
+.siteMain__link {
+	padding: 8%;
+}
+
+.siteMain__link > li {
+	font-family: "impact";
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #09639c;
+	width: 48%;
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	transform: rotate(-12deg);
+}
+
+.siteMain__link > li > a {
+	cursor: pointer;
+}
+
+.siteMain__link > li > a:hover {
+	transition: 0.3s all;
+	color: orange;
+}
+
+.modal {
+	display: none;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.modalContact {
+	display: none;
+	z-index: 10;
+	width: 60%;
+	height: 80%;
+	position: fixed;
+	top: 10%;
+	left: 20%;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.modalContact__inner {
+	position: relative;
+}
+
+.modalContact__head {
+	font-size: 28px;
+	color: #666;
+	text-align: center;
+}
+
+.modalContact__input {
+	padding: 10px;
+	text-align: center;
+}
+
+.modalContact__text {
+	color: #333;
+	margin-top: 16px;
+	font-size: 18px;
+}
+
+.modalContact__text > span {
+	display: inline-block;
+	width: 120px;
+	text-align: left;
+}
+
+.modalContact__text > input {
+	width: 280px;
+	padding: 4px;
+	font-size: 16px;
+}
+
+.modalContact__comment {
+	margin-top: 20px;
+}
+
+.modalContact__comment > textarea {
+	width: 400px;
+	height: 120px;
+	border: 2px solid #eee;
+	font-size: 18px;
+}
+
+.submitWrap {
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.submitWrap p {
+	text-align: center;
+}
+
+.submitBtn {
+	width: 120px;
+	cursor: pointer;
+	padding: 8px;
+	font-size: 16px;
+	color: #fff;
+	background-color: lightcoral;
+	border: 2px solid #eee;
+	border-radius: 8px;
+}
+
+.modalContact__closeBtn {
+	z-index: 15;
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: -18px;
+	right: -18px;
+}
+
+.modalContact__closeBtn img {
+	width: 100%;
+}
+
+.modalContact__closeBtn:hover {
+	opacity: 0.8;
+}
+
+.modalInfo {
+	display: none;
+	z-index: 10;
+	width: 70%;
+	height: 80%;
+	position: fixed;
+	top: 10%;
+	left: 15%;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 40px;
+}
+
+.modalInfo__inner {
+	position: relative;
+}
+
+.modaiInfo__head {
+	font-size: 20px;
+}
+
+.modaiInfo__head > span {
+	border-bottom: 2px solid lightcoral;
+	padding-bottom: 2px;
+}
+
+.infoTable {
+	margin-top: 20px;
+	padding: 16px;
+}
+
+.infoTable__item {
+	line-height: 2;
+	font-size: 16px;
+	color: #666;
+	border-bottom: 2px solid #eee;
+	padding: 6px;
+}
+
+.infoTable__item > dt {
+	display: inline-block;
+	width: 120px;
+}
+
+.infoTable__item > dd {
+	display: inline-block;
+}
+
+.modalinfo__closeBtn {
+	z-index: 15;
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: -38px;
+	right: -38px;
+}
+
+.modalinfo__closeBtn img {
+	width: 100%;
+}
+
+.modalinfo__closeBtn:hover {
+	opacity: 0.8;
+}
+
+.modalAbout {
+	display: none;
+	z-index: 10;
+	width: 70%;
+	height: 80%;
+	position: fixed;
+	top: 10%;
+	left: 15%;
+	background-color: #fff;
+	border-radius: 16px;
+	padding: 32px;
+}
+
+.modalAbout__inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-image: url(/img/coffee_about.jpg);
+	background-size: cover;
+}
+
+.modalAbout__closeBtn {
+	z-index: 15;
+	cursor: pointer;
+	width: 36px;
+	height: 36px;
+	position: absolute;
+	top: -32px;
+	right: -32px;
+}
+
+.modalAbout__closeBtn:hover {
+	opacity: 0.8;
+}
+
+.modalAbout__closeBtn img {
+	width: 100%;
+}
+
+.modalAbout__text {
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 24px;
+	color: #fff;
+	line-height: 2;
+}
+
+.modalAbout__textLast {
+	margin-top: 16px;
+	font-size: 20px;
+	text-align: right;
+}
+
+@media screen and (max-width: 840px) {
+	.splitBox {
+		width: 100%;
+		height: 50%;
+	}
+
+	.leftBox {
+		padding: 8px;
+		position: absolute;
+		top: 0;
+	}
+
+	.rightBox {
+		padding: 0 8px 8px 8px;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.siteMain {
+		top: 20%;
+		left: 18.5%;
+		width: 60%;
+	}
+
+	.siteMain__link > li {
+		width: 100%;
+		transform: rotate(0deg);
+		font-size: 24px;
+		margin-top: 16px;
+		display: block;
+	}
+
+	.modalAbout {
+		padding: 20px;
+		height: 70%;
+		top: 10%;
+	}
+
+	.modalAbout__text {
+		padding:20px;
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	.modalAbout__closeBtn {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: -22px;
+		right: -22px;
+	}
+
+	.infoTable {
+		margin-top: 12px;
+		padding: 4px;
+	}
+
+	.infoTable__item {
+		line-height: 1.5;
+		font-size: 14px;
+		padding: 4px;
+	}
+
+	.infoTable__item > dt {
+		width: 100%;
+	}
+
+	.infoTable__item > dd {
+		text-indent: 1em;
+		font-size: 12px;
+	}
+
+	.modalContact {
+		width: 80%;
+		height:90%;
+		top: 5%;
+		left: 10%;
+		border-radius: 20px;
+		padding: 12px;
+	}
+
+	.modalContact__head {
+		font-size: 20px;
+	}
+
+	.modalContact__text {
+		margin-top: 12px;
+		font-size: 16px;
+	}
+
+	.modalContact__text > span {
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+	}
+
+	.modalContact__text > input {
+		width: 200px;
+		padding: 2px;
+		font-size: 16px;
+		border: 2px solid #eee;
+	}
+
+	.modalContact__comment {
+		margin-top: 8px;
+	}
+
+	.modalContact__comment > textarea {
+		width: 200px;
+		height: 100px;
+		font-size: 16px;
+	}
+
+	.modalContact__closeBtn {
+		width: 26px;
+		height: 26px;
+		top: -12px;
+		right: -12px;
+	}
+
+	.submitWrap {
+		margin-top:12px;
+	}
+}

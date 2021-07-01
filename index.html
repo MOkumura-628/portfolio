@@ -1,15 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Example Portfolio</title>
-    <link rel="stylesheet" href="/portfolio/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex">
+  <title>PortFolio Site</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/top.css">
 </head>
+
 <body>
-    <h1>Hello GitHub.io !</h1>
-    <h2 class="testText">Change Next</h2>
-    <a href="/portfolio/content/test2.html">jump</a>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__heading">My Web <span>Portfolio</span></h1>
+      <p class="header__text">Coder M_Okumura</p>
+    </header>
+    <main class="main">
+      <div class="main__btnWrap">
+        <button id="js-profileBtn" class="switchBtn ft">PROFILE</button>
+        <button id="js-productBtn" class="switchBtn">PRODUCT</button>
+      </div>
+      <div class="main__content">
+        <div id="js-profile" class="profile">
+            <div class="info">
+                <h3 class="info__heading">基本情報</h3>
+                <div class="info__basic">
+                  <p>1993年兵庫県生まれ<br><span class="fwb">「使う側から、創る側へ」</span>という思いから2017年度に上京し業界で勤務をはじめました。</p>
+                  <p>途中休業していた際や独学期間をのぞいて、Webコーダーとしての業界経験は実務で約2年です。<br>得意な領域はシンプルかつ軽量なページの実装を効率よく行うことです</p>
+                  <p>今後はよりモダンで様々なアプリケーション開発に携われるようなJavascriptのスキルを高めていくため現在習得中です</p>
+                </div>
+              </div>
+              <div class="info">
+                <h3 class="info__heading">スキルシート</h3>
+                <div class="info__skill">
+                    <p class="info__skillText">コーディングをする際はデザイナーさんが作成したPSDファイルもしくはPng画像から比率を求めてレイアウトする手法でデザインを再現しておりました。<br>また、社内プロジェクト管理はBacklog・コミュニケーションツールはSlack・ChatWorkを利用しておりました。</p>
+                    <table class="skillTable">
+                        <tr>
+                          <th>言語</th>
+                          <th>自己評価</th>
+                          <th>実務</th>
+                        </tr>
+                        <tr>
+                          <td>HTML5 &amp; CSS3</td>
+                          <td>★★★</td>
+                          <td>◯ 2年</td>
+                        </tr>
+                        <tr>
+                          <td>Sass</td>
+                          <td>★★★</td>
+                          <td>◯ 1年</td>
+                        </tr>
+                        <tr>
+                          <td>Gulp</td>
+                          <td>★★</td>
+                          <td>◯ 1年</td>
+                        </tr>
+                        <tr>
+                          <td>JavaScript</td>
+                          <td>★★</td>
+                          <td>◯ 1年</td>
+                        </tr>
+                        <tr>
+                          <td>jQuery</td>
+                          <td>★★</td>
+                          <td>◯ 1年</td>
+                        </tr>
+                        <tr>
+                          <td>Git</td>
+                          <td>★★</td>
+                          <td>◯ 1年</td>
+                        </tr>
+                        <tr>
+                          <td>Wordpress</td>
+                          <td>★★</td>
+                          <td>◯ 1年</td>
+                        </tr>
+                        <tr>
+                          <td>PHP</td>
+                          <td>★</td>
+                          <td>▲ 半年</td>
+                        </tr>
+                        <tr>
+                            <td>PhotoShop</td>
+                            <td>★</td>
+                            <td>▲ 半年</td>
+                          </tr>
+                          <tr>
+                            <td>Illustrator</td>
+                            <td>★</td>
+                            <td>×</td>
+                          </tr>
+                          <tr>
+                      </table>
+                </div>
+                <div class="tool__info">
+                  <p></p>
+                </div>
+              </div>
+          <div class="info">
+            <h3 class="info__heading">実務経験内容</h3>
+            <p class="info__cap">業界で実務経験を積んだ企業は2社です、共にコーダーとしての参加です</p>
+            <div class="jobInfo">
+              <h3>「1社目の企業」</h3>
+              <p>入社後約3ヶ月ほどのプログラミング研修を経たあと、国内最大手の旅行宿予約サービスのフロントエンド開発へと参画し約1年間ほど業務に励んでおりました。</p>
+              <div class="jobInfo__item">
+                <p>①社内研修時代</p>
+                <p>HTML &amp; CSSからスタート</p>
+                <p>jQueryをメインとしてJavaScriptコーディングの基本を学ぶ。</p>
+                <p>コーディング基礎が備わった時点で、会社が社内受託で得ている案件の制作補助として業務を開始</p>
+                <p>3サイトの制作に携わった時点で、常駐先クライアントへと勤務地を移す</p>
+              </div>
+              <div class="jobInfo__item">
+                <p>②クライアント先常駐時代</p>
+                <p>クライアント先は業界最大手の旅行の宿予約サイトのフロントエンドチームでした。</p>
+                <p>業務中のマークアップとjavascriptの比率で言うと8:2くらいだったかと思われます。</p>
+                <p>タスクランナーではGulp.jsを利用し・HTMLのテンプレートエンジンにはPugを利用、またCSSメタ言語ではSassを利用して開発しておりました。
+                </p>
+                <p class="jobInfo__detail">主な業務内容</p>
+                <div class="mt10">
+                    <p>①新規LPコーディング(主にマークアップ)</p>
+                    <p>デザイナーさんからPhotoshopデータをいただきそれに沿ってコーディングをしていました。</p>
+                </div>
+                <div class="mt10">
+                    <p>②既存ページのデザイン変更に伴う回修業務</p>
+                    <p>バナーの差し替えや、テキスト変更<br>仕様が変わったjSのアニメーションの変更などを担当しました。</p>
+                </div>
+                <div class="mt10">
+                    <p>③新規大型案件(大量デザイン修正 + 機能改善)に伴う チームコーディング</p>
+                    <p>部分的な変更では無く、サービス全体のデザインの変更に伴い<br>運用面や新規案件の際にどういった開発フローであると効率が良いかなどの会議を通じて、共通CSSやUIパーツの設計をしておりました。</p>
+                </div>
+              </div>
+            </div>
+            <div class="jobInfo">
+                <h3>「2社目の企業」</h3>
+                <p>サッカー育成アプリゲームを主な業務としつつ、新規プロジェクトとしてサッカー情報キュレーションサイトの構築という業務を担当しました。</p>
+                <div class="jobInfo__item">
+                    <p class="jobInfo__detail">主な業務内容</p>
+                    <div class="mt10">
+                        <p>①定期的に発生するゲームのイベントの告知・また簡易webゲームページ</p>
+                        <p>こちらは事業のメインとなるアプリゲームの新規イベントの告知ページの実装と、アイテムを受け取るまでの導線となるページの実装を担当しました。</p>
+                        <p>スマホアプリユーザーの対応となるので、レスポンシブ対応ではなく、ユーザーエージェントによる振り分けによってデザインを実装していました。Javascriptでのアニメーション実装が多い案件でした。</p>
+                    </div>
+                    <div class="mt10">
+                        <p>②サッカー情報メディアの改善・リニューアル</p>
+                        <p>ライターさんに依頼して記事を投稿するメディアだったところを、記事をキュレーションして表示するメディアにするというリニューアル対応。</p>
+                        <p>主にWordpressでの対応だったので、CSSでのリニューアルに沿ったデザイン変更とJsによるUX変更、PHPで簡易的にデータを取得するというものが実装内容となります</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="js-product" class="product">
+            <div class="info">
+              <h3 class="info__heading">制作物一覧</h3>
+              <p class="info__cap">こちら、全て個人的に制作したサイトとなります</p>
+              <ul class="productList">
+                <li class="productList__item">
+                  <img src="./img/catch_pro.png" alt="初学者向けフロントエンド解説サムネイル">
+                  <a href="./pages/beginner_pro.html" target="_blank">CHECK</a>
+                  <p>Webのフロントエンドの初学者向けに、どのような言語やツール、開発ポジションがあるのかなどと簡単に解説したページとなります</p>
+                </li>
+                <li class="productList__item">
+                  <img src="./img/cafe_ace_catch.png" alt="CAFE_ACE">
+                  <a href="./pages/cafe_index.html" target="_blank">CHECK</a>
+                  <p>架空のカフェのHP</p>
+                </li>
+                <li class="productList__item">
+                  <img src="./img/cal_toplogo.png" alt="計算機">
+                  <a href="./pages/calculation.html" target="_blank">
+                  CHECK</a>
+                  <p>BMIや目標日までのカウントダウン等、日常でよく使うような計算ツールアプリです</p>
+                </li>
+                <li class="productList__item">
+                  <img src="https://placehold.jp/400x300.png" alt="ダミー">
+                  <a href="./pages/calorie_check.html">CHECK</a>
+                  <p>よく利用する飲食チェーン店の栄養成分が記載されたページにアクセスしやすくしたまとめサイトです</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+  </div>
+  </main>
+  <footer class="footer">© 2021 MOkumura-628 All Rights Reserved.</footer>
+  </div>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

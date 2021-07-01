@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="robots" content="noindex">
+  <title>カロリーチェックサイト</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/port/calorie_check.css">
+  <script src="../js/lib/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__heading">カロリーチェック</h1>
+    <p class="header__text">飲食チェーン店の栄養成分にアクセス</p>
+  </header>
+  <div class="container">
+    <div class="listTable">
+      <h2 class="listTable__head">ジャンル一覧</h2>
+      <ul class="listTable__main">
+        <li class="hm"><a href="#hbger">ハンバーガー</a></li>
+        <li class="gyu"><a href="#gydon">牛丼</a></li>
+        <li class="fmres"><a href="#fmres">ファミレス</a></li>
+        <li class="sushi"><a href="#sushi">回転寿司</a></li>
+      </ul>
+    </div>
+
+    <div id="hbger" class="mainItem">
+      <h3 class="mainItem__head">ハンバーガー</h3>
+      <ul class="mainItem__list">
+        <li>
+          <img src="../img/calorie/mac.png" alt="マクドナルド">
+          <a href="https://www.mcdonalds.co.jp/quality/allergy_Nutrition/nutrient/" target="_blank"><span
+              class="urlBtn">マクドナルド</span></a>
+        </li>
+        <li>
+          <img src="../img/calorie/burgerking.jpg" alt="バーガーキング">
+          <a href="https://di7x3yh836phz.cloudfront.net/images/notice/bbbc72e0-0138-4de3-9b08-2acc413b5d51.pdf"
+            target="_blank"><span class="urlBtn">バーガーキング</span></a>
+
+        </li>
+        <li>
+          <img src="../img/calorie/mosburger.png" alt="モスバーガー">
+          <a href="https://www.mos.jp/menu/pdf/nutrition.pdf" target="_blank"><span class="urlBtn">モスバーガー</span></a>
+        </li>
+        <li>
+          <img src="../img/calorie/freshness.jpg" alt="フレッシュネスバーガー">
+          <a href="https://www.freshnessburger.co.jp/pdf/seibun.pdf" target="_blank"><span
+              class="urlBtn">フレッシュネスバーガー</span></a>
+
+        </li>
+        <li>
+          <img src="../img/calorie/lotteria.jpg" alt="ロッテリア">
+          <a href="https://www.lotteria.jp/pdf/jp/store/storage/calorie.pdf" target="_blank"><span
+              class="urlBtn">ロッテリア</span></a>
+        </li>
+        <li>
+          <img src="../img/calorie/kfc.png" alt="ケンタッキー">
+          <a href="https://www.kfc.co.jp/pdf/food_info/nutrition" target="_blank"><span class="urlBtn">ケンタッキー</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="gydon" class="mainItem">
+      <h3 class="mainItem__head">牛丼</h3>
+      <ul class="mainItem__list">
+        <li><img src="../img/calorie/yoshinoya.png" alt="吉野家"><a href="https://www.yoshinoya.com/pdf/allergy/" target="_blank"><span class="urlBtn">吉野家</span></a></li>
+        <li><img src="../img/calorie/sukiya.png" alt="すき家"><a href="https://www.sukiya.jp/about/common/pdf/nutrition.pdf" target="_blank"><span class="urlBtn">すき家</span></a></li>
+        <li><img src="../img/calorie/matuya.jpg" alt="松屋"><a href="https://www.matsuyafoods.co.jp/matsuya/safety/allergen.html" target="_blank"><span class="urlBtn">松屋</span></a></li>
+        <li><img src="../img/calorie/nakau.png" alt="なか卯"><a href="https://www.nakau.co.jp/jp/pdf/n_eiyouseibun_list.pdf" target="_blank"><span class="urlBtn">なか卯</span></a></li>
+      </ul>
+    </div>
+
+    <div id="fmres" class="mainItem">
+      <h3 class="mainItem__head">ファミリーレストラン</h3>
+      <ul class="mainItem__list">
+        <li><img src="../img/calorie/gasuto.png" alt="ガスト"><a href="https://www.skylark.co.jp/chawan/pk637h00000061wm-att/allergy.pdf" target="_blank"><span class="urlBtn">ガスト</span></a></li>
+        <li><img src="../img/calorie/royalhost.jpg" alt="ロイヤルホスト"><a href="https://www.royalhost.jp/safety/images/host_tsujo_%20allergen_list.pdf" target="_blank"><span class="urlBtn">ロイヤルホスト</span></a></li>
+        <li><img src="../img/calorie/dennys.jpg" alt="デニーズ"><a href="https://www.dennys.jp/safety/pdf/nutritive_value_A.pdf?0618" target="_blank"><span class="urlBtn">デニーズ</span></a></li>
+        <li><img src="../img/calorie/jyonasan.jpg" alt="ジョナサン"><a href="https://www.skylark.co.jp/jonathan/menu/index.html" target="_blank"><span class="urlBtn">ジョナサン</span></a></li>
+        <li><img src="../img/calorie/saizeriya.jpg" alt="サイゼリヤ"><a href="https://www.saizeriya.co.jp/menu/grandmenu.html" target="_blank"><span class="urlBtn">サイゼリヤ</span></a></li>
+
+      </ul>
+    </div>
+
+    <div id="sushi" class="mainItem">
+      <h3 class="mainItem__head">回転寿司</h3>
+      <ul class="mainItem__list">
+        <li><img src="../img/calorie/sushiro.png" alt="スシロー"><a href="https://www.akindo-sushiro.co.jp/menu/" target="_blank"><span class="urlBtn">スシロー</span></a></li>
+        <li><img src="../img/calorie/kura.jpg" alt="くら寿司"><a href="https://www.kurasushi.co.jp/menu/?area=area0" target="_blank"><span class="urlBtn">くら寿司</span></a></li>
+        <li><img src="../img/calorie/hama.jpg" alt="はま寿司"><a href="https://www.hamazushi.com/assets/menu/pdf/allergen_202102.pdf" target="_blank"><span class="urlBtn">はま寿司</span></a></li>
+        <li><img src="../img/calorie/kappa.jpg" alt="かっぱ寿司"><a href="https://www.kappasushi.jp/master_data/pdf/info_allergen.pdf" target="_blank"><span class="urlBtn">かっぱ寿司</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="../js/calorie_check.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Serif JP', serif;
+	background-color: #fff5e8;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.clear {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.header {
+	padding: 20px 40px 8px;
+}
+
+.header__logo {
+	font-family: 'Oleo Script', cursive;
+	font-size: 32px;
+	color: #09639c;
+}
+
+.header__img {
+	display: inline-block;
+	width: 28px;
+}
+
+.header__img > img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.header__link {
+	display: inline-block;
+}
+
+.header__link > a {
+	vertical-align: middle;
+}
+
+.header__link > a:hover {
+	transition: 0.5s;
+	color: orange;
+}
+
+.menu {
+	padding: 10px 40px;
+}
+
+.menu__heading {
+	font-family: 'Oleo Script', cursive;
+	text-align: center;
+	font-size: 28px;
+	color: #09639c;
+}
+
+.menu__inner {
+	margin-top: 32px;
+}
+
+.menu__detail {
+	margin-top: 24px;
+	padding-left: 12px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #666;
+}
+
+.drink {
+	padding: 8px;
+	width: 48%;
+	float: left;
+	background-size: cover;
+	background-color: #215d0f;
+	border: 8px solid rgb(169, 101, 22);
+	border-radius: 6px;
+	color: white;
+}
+
+.food {
+	padding: 8px;
+	margin-left: 2.5%;
+	width: 48%;
+	float: left;
+	background-color: #215d0f;
+	border: 8px solid rgb(169, 101, 22);
+	border-radius: 6px;
+	color: white;
+}
+
+.menutable {
+	padding: 16px;
+}
+
+.menutable__heading {
+	margin-top: 12px;
+	font-family: 'Oleo Script', cursive;
+	font-size: 28px;
+	text-align: center;
+	color: #ff4b52;
+	font-weight: bold;
+}
+
+.menutable__heading > img {
+	width: 28px;
+	height: 28px;
+	vertical-align: bottom;
+	margin-right: 8px;
+}
+
+.menutable__item {
+	margin-top: 8px;
+	padding: 4px;
+	line-height: 2;
+	font-size: 16px;
+}
+
+.menutable__item > dt {
+	display: inline-block;
+	width: 78%;
+}
+
+.menutable__item > dd {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+	.drink {
+		width:100%;
+	}
+	.food {
+		width:100%;
+		margin:20px 0;
+	}
+}
+
+

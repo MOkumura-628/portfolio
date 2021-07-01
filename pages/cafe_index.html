@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="robots" content="noindex">
+	<title>カフェエース</title>
+	<!--css-->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/port/cafe.css">
+	<!--font-->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Oleo+Script|Teko&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4bf309b3a3.js"></script>
+	<!--js-lib-->
+	<script src="/js/lib/jquery-2.2.4.min.js"></script>
+</head>
+
+<body>
+	<div class="splitBox leftBox">
+		<div class="leftBox__inner"></div>
+	</div>
+	<div class="splitBox rightBox">
+		<div class="rightBox__inner"></div>
+	</div>
+	<div class="siteMain">
+		<div class="siteMain__inner">
+			<h1 class="siteMain__head"><img src="/img/coffee_toplogo.png" alt="">CAFE ACE</h1>
+			<ul class="siteMain__link">
+				<li><a href="javascript:void(0)" id="js-aboutShow">ABOUT</a></li>
+				<li><a href="/pages/cafe_menu.html">MENU</a></li>
+				<li><a href="javascript:void(0)" id="js-infoShow">INFO</a></li>
+				<li><a href="javascript:void(0)" id="js-contactShow">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="modal" id="js-modal">
+		<div class="modalContact" id="js-modal-contact">
+			<div class="modalContact__inner">
+				<h1 class="modalContact__head">CONTACT FORM</h1>
+				<div class="modalContact__input">
+					<p class="modalContact__text"><span>Name：</span><input type="text"></p>
+					<p class="modalContact__text"><span>Email：</span><input type="text"></p>
+					<p class="modalContact__text"><span>PHONE：</span><input type="text"></p>
+					<p class="modalContact__text"><span>COMMENT</span></p>
+					<div class="modalContact__comment">
+						<textarea></textarea>
+					</div>
+					<div class="submitWrap">
+						<p><button class="submitBtn">SUBMIT</button></p>
+					</div>
+				</div>
+				<div class="modalContact__closeBtn">
+					<a href="javascript:void(0)" id="js-modal-closeBtn"><img src="/img/close_btn.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="modalInfo" id="js-modal-info">
+			<div class="modalInfo__inner">
+				<h2 class="modaiInfo__head"><span>SHOPINFO</span></h2>
+				<div class="infoTable">
+					<dl class="infoTable__item">
+						<dt>SHOPNAME</dt>
+						<dd>「 CAFE ACE 」</dd>
+					</dl>
+					<dl class="infoTable__item">
+						<dt>OPEN-LAST</dt>
+						<dd>AM7:00 ~ PM9:00</dd>
+					</dl>
+					<dl class="infoTable__item">
+						<dt>CLOSE</dt>
+						<dd>Wednesday</dd>
+					</dl>
+					<dl class="infoTable__item">
+						<dt>Address</dt>
+						<dd>東京都豊島区東池袋2-4-9 ACEビル1F</dd>
+					</dl>
+					<dl class="infoTable__item">
+						<dt>TEL</dt>
+						<dd>03-0000-0000</dd>
+					</dl>
+					<dl class="infoTable__item">
+						<dt>ヒトコト</dt>
+						<dd>どなたでも気軽にお越しください</dd>
+					</dl>
+				</div>
+				<div class="modalinfo__closeBtn">
+					<a href="javascript:void(0)" id="js-modal-closeInfoBtn"><img src="/img/close_btn.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="modalAbout" id="js-modal-about">
+			<div class="modalAbout__inner">
+				<div class="modalAbout__text">
+					<p>「CafeAce」は<br>都会の雑踏の中を少しかけぬけ、路地裏に入ったところにポツンとたたずんでいます。</p>
+					<p>本格サイフォン式コーヒーが<br>1杯300円よりお楽しみいただけます。</p>
+					<p>どなたでも是非お気軽にお越しくださいませ。</p>
+					<p class="modalAbout__textLast">店主</p>
+				</div>
+				<div class="modalAbout__closeBtn">
+					<a href="javascript:void(0)" id="js-modal-closeAboutBtn"><img src="/img/close_btn.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/js/cafe_ace.js"></script>
+</body>
+</html>
