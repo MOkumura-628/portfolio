@@ -46,7 +46,7 @@ a {
 .leftBox__inner {
 	width: 100%;
 	height: 100%;
-	background-image: url("../img/cafe_ace.jpeg");
+	background-image: url("../../img/cafe_ace.jpeg");
 	background-size: cover;
 }
 
@@ -58,7 +58,7 @@ a {
 .rightBox__inner {
 	width: 100%;
 	height: 100%;
-	background-image: url("../img/cafe_ace_left.jpeg");
+	background-image: url("../../img/cafe_ace_left.jpeg");
 	background-size: cover;
 }
 
@@ -74,7 +74,7 @@ a {
 .siteMain__inner {
 	width: 100%;
 	height: 100%;
-	background-image: url("../img/main_center.jpeg");
+	background-image: url("../../img/main_center.jpeg");
 	background-size: cover;
 	box-shadow: 0 0 128px 16px #aaa;
 	border-radius: 8px;
